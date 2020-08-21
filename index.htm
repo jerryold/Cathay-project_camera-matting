@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.20.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Smart Device Camera Template for HTML, CSS, JS and WebRTC"
+    />
+    <meta name="keywords" content="HTML,CSS,JavaScript, WebRTC, Camera" />
+    <meta name="author" content="Kasper Kamperman" />
+    
+    <title>Mobile First Camera Template</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="button.css" />
+    <meta charset="utf-8">
+ 
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+  <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+  </head>
+  
+  <body>
+    
+   <div id='all'>
+    <div id="container">
+      <div id="vid_container">
+        <video id="video" autoplay playsinline></video>
+        <div id="video_overlay">
+          <img src="struc.png">
+        </div>
+      </div>
+      <div id="gui_controls">
+        <button
+          id="switchCameraButton"
+          name="switch Camera"
+          type="button"
+          aria-pressed="false"
+        ></button>
+        <button id="takePhotoButton" name="take Photo" type="button"></button>
+        <button
+          id="toggleFullScreenButton"
+          name="toggle FullScreen"
+          type="button"
+          aria-pressed="false"
+        ></button>
+      </div>
+        
+   
+	
+    </div>
+    <div id="cloud">
+  
+    </div>
+  </div>
+ 
+    <script src="js/adapter.min.js"></script>
+    <script src="js/screenfull.min.js"></script>
+    <script src="js/howler.core.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/button.js"></script>
+  </div> 
+    
+  </body>
+</html>
