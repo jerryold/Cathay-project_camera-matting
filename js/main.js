@@ -305,7 +305,144 @@ function takeSnapshot() {
   // if you'd like to show the canvas add it to the DOM
   $('#all').html(
     
-    ' <h1 class="title">Loading</h1><div class="rainbow-marker-loader"></div><iframe width="560" height="315" src="https://www.youtube.com/embed/MLy-cgeTnIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+    `<div class="container">
+
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    <div class="rain">
+      <div class="drop"></div>
+      <div class="waves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="splash"></div>
+      <div class="particles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+  </div>`);
   var canvas = document.createElement('canvas');
 
   var width = 640;
