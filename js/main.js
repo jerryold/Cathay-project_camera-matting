@@ -303,146 +303,153 @@ function downloadImage(data, filename = 'untitled.png') {
 }
 function takeSnapshot() {
   // if you'd like to show the canvas add it to the DOM
-  $('#all').html(
+  $('#container1').html(
     
-    `<div class="container">
+    ` 
 
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+    <div class="container1">
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div class="rain">
+		<div class="drop"></div>
+		<div class="waves">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="splash"></div>
+		<div class="particles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+</div>
   
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+    
   
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
   
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  
-    <div class="rain">
-      <div class="drop"></div>
-      <div class="waves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="splash"></div>
-      <div class="particles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  
-  </div>`);
+  `);
   var canvas = document.createElement('canvas');
 
   var width = 640;
