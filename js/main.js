@@ -303,153 +303,59 @@ function downloadImage(data, filename = 'untitled.png') {
 }
 function takeSnapshot() {
   // if you'd like to show the canvas add it to the DOM
-  $('#container1').html(
+  $('#all').html(
     
-    ` 
-
-    <div class="container1">
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-	<div class="rain">
-		<div class="drop"></div>
-		<div class="waves">
-			<div></div>
-			<div></div>
-		</div>
-		<div class="splash"></div>
-		<div class="particles">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-
-</div>
-  
+    `<div class="stage">
+    <div class="table"></div>
+    <div class="pc">
+      <div class="loader">   
+      <span class="box"></span>   
+      <span class="box"></span>  
+      <div class="code"> 
+      <img src="files.png" width="120px">
     
-  
-  
-  `);
+      </div>    
+      <span class="txt">Loading Image...</span>
+      </div>
+    </div>
+    <div class="cup"></div>
+    <div class="cup-cover"></div>
+    <div class="clock">
+      <div class="marker-top"></div>
+      <div class="marker-right"></div>
+      <div class="marker-bottom"></div>
+      <div class="marker-left"></div>
+      <div class="pointer-min"></div>
+      <div class="pointer-hour"></div>
+      <div class="pointer"></div>
+    </div>
+    <div class="guy">
+      <div class="hat">
+        <div class="hat-hair"></div>
+        <div class="hat-close"></div>
+      </div>
+      <div class="hair-left"></div>
+      <div class="hair-middle"></div>
+      <div class="hair-right"></div>
+      <div class="ear-left"></div>
+      <div class="ear-right"></div>
+      <div class="face">
+        <div class="eye"></div>
+        <div class="eye"></div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+      </div>
+      <div class="neck"></div>
+      <div class="body"></div>
+      
+      
+    </div>
+    <div class="book one"></div>
+    <div class="book two"></div>
+    <div class="book three"></div>
+    
+  </div>
+    `);
   var canvas = document.createElement('canvas');
 
   var width = 640;
@@ -494,7 +400,7 @@ function takeSnapshot() {
  
   function lbtrigger(token){
     $.ajax({
-      url: 'https://znxdh5vzyc.execute-api.us-east-2.amazonaws.com/ms/opencv-matting-dontChargeMePlz?token='+token,
+      url: 'https://znxdh5vzyc.execute-api.us-east-2.amazonaws.com/ms/generateScri?token='+token,
       type: 'POST',
       headers: {
         Accept: "application/json"
@@ -524,7 +430,7 @@ function takeSnapshot() {
             <div class="puff puff-9"></div>
             <div class="puff puff-10"></div>
             <div class="cloud-core">
-            <a href="https://layer-opencv-test-akira.s3.us-east-2.amazonaws.com/output/output_${token}.png">Download</a>
+            <a href="https://layer-opencv-test-akira.s3.us-east-2.amazonaws.com/output/${token}/output1_${token}.png">Download</a>
             </div>
             <div class="check"></div>
             <div class="arrow">
@@ -546,7 +452,43 @@ function takeSnapshot() {
           
         }, 
       success: function(response){
-             //alert(JSON.stringify(response));
+        alert('ready for download');
+        
+        $('#all').html(
+         
+          `
+        <img src="https://layer-opencv-test-akira.s3.us-east-2.amazonaws.com/output/${token}/output1_${token}.png"></img>
+        <button type="button" class="icon">
+        <div class="cloud">
+          
+          <div class="puff puff-1"></div>
+          <div class="puff puff-2"></div>
+          <div class="puff puff-3"></div>
+          <div class="puff puff-4"></div>
+          <div class="puff puff-5"></div>
+          <div class="puff puff-6"></div>
+          <div class="puff puff-7"></div>
+          <div class="puff puff-8"></div>
+          <div class="puff puff-9"></div>
+          <div class="puff puff-10"></div>
+          <div class="cloud-core">
+          <a href="https://layer-opencv-test-akira.s3.us-east-2.amazonaws.com/output/output_${token}.png">Download</a>
+          </div>
+          <div class="check"></div>
+          <div class="arrow">
+            <div class="arrow-stem">
+              <div class="arrow-l-tip"></div>
+              <div class="arrow-r-tip"></div>
+            </div>
+          </div>
+        </div>
+        <div class="preload">
+          <div class="drop drop-1"></div>
+          <div class="drop drop-2"></div>
+          <div class="drop drop-3"></div>
+        </div>
+        <div class="progress"></div>
+      </button>`);
         }
     });
   }
